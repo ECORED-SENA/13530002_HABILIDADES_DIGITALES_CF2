@@ -1,29 +1,40 @@
-<template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+<template lang="pug">
+#app
+  .curso-contenedor(:class="showMenu && ['curso-contenedor--menu-abierto']")
+    header#CursoPresentacion.curso-presentacion.page-header
+      .page-textura
+        OverHeader(:showMenu.sync="showMenu")
+        Header
+    
+    router-view
+  AsideMenu(:showMenu.sync="showMenu")
 </template>
 
+<script>
+import OverHeader from './components/OverHeader'
+import Header from './components/Header'
+import AsideMenu from './components/AsideMenu'
+
+export default {
+  name: 'App',
+  components: { Header, OverHeader, AsideMenu },
+  data() {
+    return {
+      showMenu: false,
+    }
+  },
+}
+</script>
+
 <style lang="sass">
-#app
-  font-family: Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  text-align: center
-  color: #2c3e50
+@import "./assets/scss/main.scss"
 
+a
+  cursor: pointer
 
-#nav
-  padding: 30px
-
-  a
-    font-weight: bold
-    color: #2c3e50
-
-    &.router-link-exact-active
-      color: #42b983
+.curso-contenedor
+  margin-left: 0
+  transition: margin-left 0.5s ease-in-out
+  &--menu-abierto
+    margin-left: 320px
 </style>
