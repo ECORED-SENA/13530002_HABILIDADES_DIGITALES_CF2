@@ -96,11 +96,6 @@ export const menuPrincipal = {
           title: 'Card Avatar Left',
           hash: 'cardavatarleft',
         },
-        {
-          icon: 'fa fa-file-text',
-          title: 'Botón enlace a recursos externos',
-          hash: 'medialink',
-        },
       ],
     },
     {

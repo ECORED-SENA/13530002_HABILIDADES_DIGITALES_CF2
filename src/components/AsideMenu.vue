@@ -15,26 +15,35 @@ aside
       ul#menuMain.menu-main
         template(v-for="(item,index) of menuData")
           li.menu-main__item(:key="`menu-item-${index}`")
-            router-link.menu-main__link(:to="{name: item.routeName}" :class="{'menu-main__link--active' : $route.name == item.routeName}")
+            router-link.menu-main__link(
+              :to="{name: item.routeName}",
+              :class="{'menu-main__link--active' : $route.name == item.routeName}"
+            )
               span.menu-main__texto 
                 strong {{item.title}}
               span.menu-main__icono
                 i(:class="item.icon")
           ul.menu-main.submenu(v-if="item.hasOwnProperty('submenu') && item.submenu.length")
-            li.menu-main__item(v-for="(subItem, subItemIndex) of item.submenu" :key="`submenu-item-${subItemIndex}`")
+            li.menu-main__item(
+              v-for="(subItem, subItemIndex) of item.submenu",
+              :key="`submenu-item-${subItemIndex}`"
+            )
               router-link.menu-main__link.is-content.routerAnchor(
                 :to="{ name: item.routeName , hash: `#${subItem.hash}` }",
-                :class="{'menu-main__link--active' : $route.hash == `#${subItem.hash}`}"
+                :class="{'menu-main__link--active': $route.hash == `#${subItem.hash}`}"
               )
                 span.menu-main__texto {{subItem.title}}
                 span.menu-main__icono
                   i(:class="subItem.icon")
           
       ul#menuSecondary.aside-extra.menu-secondary
-        li.menu-secondary__item(v-for="(secMenuItem, secMenuIndex) of subMenuData" :key="`SecMenu-item-${secMenuIndex}`")
+        li.menu-secondary__item(
+          v-for="(secMenuItem, secMenuIndex) of subMenuData",
+          :key="`SecMenu-item-${secMenuIndex}`"
+        )
           router-link.menu-secondary__link(
             v-if="secMenuItem.hasOwnProperty('routeName')",
-            :to="{path: secMenuItem.path}"
+            :to="{name: secMenuItem.routeName}"
           )
             i(:class="secMenuItem.icon")
             span.menu-secondary__texto {{secMenuItem.title}}
@@ -47,18 +56,24 @@ aside
             i(:class="secMenuItem.icon")
             span.menu-secondary__texto {{secMenuItem.title}}
 
-  #page-control.page-control(v-if="!showMenu && $route.name === 'curso'")
+  #page-control.page-control(v-if="!showMenu && $route.path.includes('curso')")
     .row.justify-content-center.align-items-center
 
-      a#back.page-control-link.page-control-prev.col.py-3.text-center(href="#")
+      router-link#back.page-control-link.page-control-prev.col.py-3.text-center(
+        v-if="controlLinks.back",
+        :to="{name: $route.name, hash: `#${controlLinks.back}`}"
+      )
         span
-          .fa.fa-chevron-left.mr-3
+          i.fa.fa-chevron-left.mr-3
           | Anterior
 
-      a#next.page-control-link.page-control-next.col.py-3.text-center(href="#")
+      router-link#next.page-control-link.page-control-next.col.py-3.text-center(
+        v-if="controlLinks.next" 
+        :to="{name: $route.name, hash: `#${controlLinks.next}`}"
+      )
         span 
           | Siguiente
-          .fa.fa-chevron-right.ml-3
+          i.fa.fa-chevron-right.ml-3
 
 </template>
 
@@ -75,6 +90,41 @@ export default {
     menuData: menuPrincipal && menuPrincipal.menu,
     subMenuData: menuPrincipal && menuPrincipal.subMenu,
   }),
+  computed: {
+    controlLinks() {
+      const menuObject = this.menuData.find(
+        item => item.routeName === this.$route.name,
+      )
+      if (!menuObject.submenu && !menuObject.submenu.length) {
+        return {
+          next: false,
+          back: false,
+        }
+      } else {
+        const idxCurrentHash = menuObject.submenu
+          .map(item => item.hash)
+          .indexOf(this.$route.hash.replace('#', ''))
+        if (idxCurrentHash === -1) {
+          return {
+            next: menuObject.submenu[0].hash,
+          }
+        } else if (idxCurrentHash === 0) {
+          return {
+            next: menuObject.submenu[idxCurrentHash + 1].hash,
+          }
+        } else if (idxCurrentHash === menuObject.submenu.length - 1) {
+          return {
+            back: menuObject.submenu[idxCurrentHash - 1].hash,
+          }
+        } else {
+          return {
+            next: menuObject.submenu[idxCurrentHash + 1].hash,
+            back: menuObject.submenu[idxCurrentHash - 1].hash,
+          }
+        }
+      }
+    },
+  },
 }
 </script>
 
