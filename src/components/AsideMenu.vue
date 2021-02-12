@@ -96,10 +96,7 @@ export default {
         item => item.routeName === this.$route.name,
       )
       if (!menuObject.submenu && !menuObject.submenu.length) {
-        return {
-          next: false,
-          back: false,
-        }
+        return {}
       } else {
         const idxCurrentHash = menuObject.submenu
           .map(item => item.hash)

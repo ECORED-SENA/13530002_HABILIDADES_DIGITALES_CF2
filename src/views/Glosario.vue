@@ -5,26 +5,24 @@
     h1 Glosario
 
   .jumbotron.bg-white
-    p
-      strong.mr-2 Normatividad:
-      | se entiende por normatividad o normativa a las formas institucionales a través de las cuales el comportamiento es configurado socialmente.
-    
-    p
-      strong.mr-2 Ley:
-      | regla o norma establecida por una autoridad superior para regular, de acuerdo con la justicia, algún aspecto de las relaciones sociales.
-    p 
-      strong.mr-2 Decreto:
-      | resolución o decisión que toma una persona o un organismo con autoridad para ello.
-    p 
-      strong.mr-2 Resoluciones administrativas:
-      | en este sentido, es una orden que pronuncia el responsable de un servicio público. Se trata de una norma cuyo alcance está limitado al contexto del servicio en cuestión y cuyo cumplimiento es obligatorio.
-
+    p(v-for="(item,index) of glosarioData" :ref="'glosario-'+item.index")
+      strong.mr-2 {{item.termino}}:
+      | {{item.significado}}.
+  
 </template>
 
 <script>
+import { glosario } from '../config/global'
 export default {
   name: 'Glosario',
+  data: () => ({
+    glosarioData: glosario,
+  }),
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="sass" scoped>
+p
+  &:last-child
+    margin-bottom: 0
+</style>

@@ -49,13 +49,13 @@
 </template>
 
 <script>
-import { global } from '../config/global'
+import { desarrolloDeContenidos } from '../config/global'
 import Creditos from '../components/Creditos'
 export default {
   name: 'Inicio',
   components: { Creditos },
   data: () => ({
-    desarrolloDeContenidos: global.desarrolloDeContenidos,
+    desarrolloDeContenidos: desarrolloDeContenidos,
   }),
   methods: {
     getIcon(type) {
