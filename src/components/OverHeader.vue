@@ -4,7 +4,7 @@ div(:class="$route.name === 'inicio' ? ['container'] : ['container-fluid']")
 
   .topbar.d-flex.justify-content-between.align-items-center(:class="$route.name != 'inicio' && ['topbar--fixed','flex-row-reverse']")
 
-    a.topbar__logo
+    .topbar__logo
       img(src="@/assets/images/logos/senaLogo.svg")
 
     .topbar__menu(:class="$route.name === 'inicio' && ['d-md-none']")

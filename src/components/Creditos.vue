@@ -17,73 +17,62 @@ footer
 
       .row.mt-5
         .col-12.col-md-6
-          h4.footer-subtitulo-2.mt-0 
-            .fa.fa-caret-right.mr-2  Contenido Instruccional
-
-          p.footer-texto.mb-2
-            strong Gloria Matilde Lee Mejía
-            br   
-            span.text-small Responsable del equipo
+          h4.footer-subtitulo-2.mt-0
+            .fa.fa-caret-right.mr-2
+            | Contenido Instruccional
 
           p.footer-texto
+            strong Gloria Matilde Lee Mejía
+            br
+            span.text-small Responsable del equipo
+            br
             span.text-small.text-uppercase Centro de Comercio y Servicios
             br
             span.text-small Regional Tolima
 
-
-          p.footer-texto.mb-2
+          p.footer-texto
             strong Rafael Nelftalí Lizcano Reyes
             br               
             span.text-small Asesor pedagógico
             br
-
-          p.footer-texto
             span.text-small.text-uppercase CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA   
             br
             span.text-small Regional Santander    
 
-          p.footer-texto.mb-2
+          p.footer-texto
             strong Fernando Martínez Rivera
             br
             span.text-small Experto temático
             br
-
-          p.footer-texto
             span.text-small.text-uppercase Coordinación Complementaria-UTI-CSF-Bogotá
             br
             span.text-small Regional Distrito Capital
 
 
-          p.footer-texto.mb-2
+          p.footer-texto
             strong Oscar Absalón Guevara]
             br
             span.text-small Diseñador instruccional
             br
-
-          p.footer-texto
             span.text-small.text-uppercase Centro de Gestión Empresarial
             br
             span.text-small Regional Distrito Capital
 
 
-          p.footer-texto.mb-2
+          p.footer-texto
             strong Andrés Felipe Velandia Espitia
             br   
             span.text-small Evaluador instruccional
             br
-
-          p.footer-texto
             span.text-small.text-uppercase Centro de Diseño y Metrología
             br
             span.text-small Regional Distrito Capital
 
-          p.footer-texto.mb-2
+          p.footer-texto
             strong Julieth Paola Vital López
             br   
             span.text-small Corrección de estilo
             br
-
-          p.footer-texto
             span.text-small.text-uppercase Centro para la Industria de la Comunicación Gráfica
             br
             span.text-small Regional Distrito Capital     
@@ -91,13 +80,13 @@ footer
                 
         .col-12.col-md-6
           h4.footer-subtitulo-2.mt-0 
-            .fa.fa-caret-right.mr-2 Diseño y desarrollo de recursos educativos digitales
+            .fa.fa-caret-right.mr-2
+            | Diseño y desarrollo de recursos educativos digitales
           
           p.footer-texto
             strong Francisco José Lizcano Reyes 
             br   
             span.text-small Responsable del equipo
-            br
 
           p.footer-texto
             strong Leyson Fabian Castaño Perez
@@ -133,7 +122,8 @@ footer
             span.text-small Regional Santander
 
           h4.footer-subtitulo-2.mt-5
-            .fa.fa-caret-right.mr-2 Gestores de repositorio
+            .fa.fa-caret-right.mr-2
+            | Gestores de repositorio
           
           p.footer-texto
             strong Alba Ines Gutierrez Gonzalez 

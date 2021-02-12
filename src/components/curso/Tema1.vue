@@ -73,8 +73,8 @@
         .row.align-items-center.justify-content-around.mb-6
           .col-4
             p.h1 
-              span.texto-azul Las Tecnologías de Información y Comunicación
-              | están presentes en aspectos cotidianos de la vida.
+              span.texto-azul.mr-1.d-inline-block Las Tecnologías de Información y Comunicación
+              span están presentes en aspectos cotidianos de la vida.
             p ¿Cuántos tienen un dispositivo móvil en las manos en este momento?
 
           .col-8

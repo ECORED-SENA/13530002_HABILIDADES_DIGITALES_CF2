@@ -122,6 +122,13 @@ export default {
       }
     },
   },
+  watch: {
+    $route(to) {
+      if (to.name === 'inicio' && this.showMenu) {
+        this.$emit('update:showMenu', false)
+      }
+    },
+  },
 }
 </script>
 
