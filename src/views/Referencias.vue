@@ -12,22 +12,26 @@
           | {{item.tituloenlace.length ? item.tituloenlace : item.enlace}}
       hr
 
+  
+    .row.justify-content-betwee
 
-    .row.justify-content-between.align-items-center
+      .col-12.col-lg-6.mb-3.mb-lg-0
+        .jumbotron.d-flex.align-items-center.p-4
+          .row.flex-fill.align-items-center
+            .col-2
+              p.mb-0.text-center
+                i.fa.fa-picture-o.fa-2x.text-center
+            .col-10
+              p.mb-0.text-center Fotografías y vectores tomados de <a class="text-small" href="https://www.shutterstock.com/" target="_blank">https://www.shutterstock.com/</a> y <a class="text-small" href="https://www.freepik.es/" target="_blank">https://www.freepik.es/</a>
 
-      .col-12.col-md-5.my-4
-        .jumbotron.p-4
-          .d-flex.justify-content-center.align-items-center
-            p.text-center.pl-4
-              i.fa.fa-picture-o.fa-2x.text-center
-            p.text-center.flex-grow-1 Fotografías y vectores tomados de <a href="https://www.shutterstock.com/" target="_blank">https://www.shutterstock.com/</a> y <a href="https://www.freepik.es/" target="_blank">https://www.freepik.es/</a>
-
-      .col-12.col-md-5.my-4
-        .jumbotron.p-4
-          .d-flex.justify-content-center.align-items-center
-            p.text-center.pl-4
-              i.fa.fa-creative-commons.fa-2x.text-center
-            p.text-center.flex-grow-1 Licencia Creative Commons <br> <strong>CC BY-NC-SA</strong><br> <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Ver licencia.</a>            
+      .col-12.col-lg-6
+        .jumbotron.d-flex.align-items-center.p-4
+          .row.flex-fill.align-items-center
+            .col-2
+              p.mb-0.text-center.pl-4
+                i.fa.fa-creative-commons.fa-2x.text-center
+            .col-10
+              p.mb-0.text-center Licencia Creative Commons <br> <strong>CC BY-NC-SA</strong><br> <a class="text-small" href="https://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Ver licencia.</a>            
 </template>
 
 <script>
@@ -40,4 +44,8 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="sass" scoped>
+.jumbotron
+  height: 100%
+  margin: 0
+</style>
