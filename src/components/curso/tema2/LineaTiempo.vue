@@ -1,16 +1,16 @@
 <template lang="pug">
 .linea-tiempo
-  .linea-tiempo__row(v-for="item of 10")
+  .linea-tiempo__row(v-for="(item,index) of datosLineaTiempo", :ref="'linea-tiempo-item-'+index")
     .linea-tiempo__content
       .linea-tiempo__text
-        span.h1 1971
-        span Este fue el mensaje del primer e-mail de la historia.
+        span.h1.mb-2 {{item.ano}}
+        span(v-html="item.texto")
 
     .linea-tiempo__content
       .linea-tiempo__icon
         .linea-tiempo__icon__container
           .linea-tiempo__icon__inner
-          img(src="@/assets/images/pages/tema2/img_11.svg")
+          img(:src="item.img")
 
   
 </template>
@@ -18,6 +18,87 @@
 <script>
 export default {
   name: 'LineaTiempo',
+  data: () => ({
+    datosLineaTiempo: [
+      {
+        ano: '1971',
+        texto: 'Este fue el mensaje del primer e-mail de la historia.',
+        img: require('@/assets/images/pages/tema2/img_11.svg'),
+      },
+      {
+        ano: '1993',
+        texto:
+          'WORLD WIDE WEB: primera página web. Se lanza MOSAIC, el primer navegador.',
+        img: require('@/assets/images/pages/tema2/img_12.svg'),
+      },
+      {
+        ano: '1994',
+        texto:
+          'Primera web de comercio electrónico: El Retailer Online Netmarket. ',
+        img: require('@/assets/images/pages/tema2/img_13.svg'),
+      },
+      {
+        ano: '1995',
+        texto:
+          'Se vende el primer libro de <strong>Amazon. Ebay</strong> vende su primer producto: un puntero lasser.',
+        img: require('@/assets/images/pages/tema2/img_14.svg'),
+      },
+      {
+        ano: '1996',
+        texto:
+          'NOKIA 9000 COMUNICATOR Primer teléfono móvil con conexión a internet.',
+        img: require('@/assets/images/pages/tema2/img_15.svg'),
+      },
+      {
+        ano: '1998',
+        texto: 'Primer DOODLE de <strong>Google</strong>.',
+        img: require('@/assets/images/pages/tema2/img_8.png'),
+      },
+      {
+        ano: '1999',
+        texto:
+          'PRIMERAS HERRAMIENTAS PARA LOS BLOGUEROS, Escritores con sus bolígrafos virtuales se comunican con amigos y familiares.',
+        img: require('@/assets/images/pages/tema2/img_16.svg'),
+      },
+      {
+        ano: '2001',
+        texto: 'Nace <strong>WIKIPEDIA</strong>.',
+        img: require('@/assets/images/pages/tema2/img_10.png'),
+      },
+      {
+        ano: '2003',
+        texto:
+          '"TERE, KAS SA HUULED MENTE?" pronunciada vía <strong>SKYPE</strong>.',
+        img: require('@/assets/images/pages/tema2/img_4.svg'),
+      },
+      {
+        ano: '2004',
+        texto: 'Primer usuario en <strong>FACEBOOK</strong>.',
+        img: require('@/assets/images/pages/tema2/img_17.svg'),
+      },
+      {
+        ano: '2005',
+        texto: '"ME AT THE ZOO" Primer video de YOUTUBE.',
+        img: require('@/assets/images/pages/tema2/img_18.svg'),
+      },
+      {
+        ano: '2007',
+        texto: 'Once años después nace el primer <strong>iPhone</strong>.',
+        img: require('@/assets/images/pages/tema2/img_19.svg'),
+      },
+      {
+        ano: '2009',
+        texto: 'Primer tweet del espacio.',
+        img: require('@/assets/images/pages/tema2/img_5.svg'),
+      },
+      {
+        ano: '2015',
+        texto:
+          'WhatsApp lanza el servicio de llamadas gratuitas y ya son 800 millones de usuarios.',
+        img: require('@/assets/images/pages/tema2/img_20.svg'),
+      },
+    ],
+  }),
 }
 </script>
 
@@ -30,7 +111,7 @@ export default {
   &__row
     display: flex
     align-items: center
-    margin-bottom: 100px
+    margin-bottom: 90px
     position: relative
     cursor: pointer
 
@@ -90,7 +171,8 @@ export default {
       .linea-tiempo__text
         transform: translateX(30px)
 
-
+    &:last-child
+      margin-bottom: 0
 
   &__content
     width: 50%
@@ -99,7 +181,7 @@ export default {
     span
       display: block
       margin: 0
-      max-width: 200px
+      max-width: 250px
       line-height: 1.1em
 
   &__text
