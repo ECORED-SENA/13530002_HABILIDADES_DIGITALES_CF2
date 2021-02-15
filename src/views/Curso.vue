@@ -102,7 +102,6 @@ export default {
     position: relative
     width: 100%
 
-
   @media screen and (min-width: 576px)
     .contenido-tarjeta
       padding: 0
@@ -113,4 +112,10 @@ export default {
       padding: 0
       width: 70%
       padding: 100px 0
+
+
+  .tarjeta-borde-amarillo
+    padding: 30px 50px
+    border-radius: 15px
+    border: 2px solid #FFA900
 </style>

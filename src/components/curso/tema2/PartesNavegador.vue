@@ -15,17 +15,15 @@
     .partes-navegador__btn.partes-navegador__btn--busqueda
       .partes-navegador__btn__texto
         span Barra de búsqueda
-    .partes-navegador__btn.partes-navegador__btn--pestana
-      .partes-navegador__btn__texto
-        span Navegación por pestañas
     .partes-navegador__btn.partes-navegador__btn--marcadores
       .partes-navegador__btn__texto
         span Marcadores
     .partes-navegador__btn.partes-navegador__btn--descargas
       .partes-navegador__btn__texto
         span Gestor de descargas
-
-
+    .partes-navegador__btn.partes-navegador__btn--pestana
+      .partes-navegador__btn__texto
+        span Navegación por pestañas
 
 </template>
 <script>
@@ -74,7 +72,6 @@ export default {
 
       .partes-navegador__btn__texto
         opacity: 1
-        transform: translateY(0)
 
     @for $i from 1 through 10
       &:nth-of-type(#{$i})
@@ -92,7 +89,6 @@ export default {
       box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.3)
       border-radius: 5px
       pointer-events: none
-      transform: translateY(10px)
 
       span
         color: #6f6f6f
@@ -103,7 +99,7 @@ export default {
         &::after
           content: ''
           display: block
-          margin-top: 15px
+          margin-top: 10px
           width: 50%
           height: 5px
 
@@ -152,8 +148,7 @@ export default {
       span::after
         background-color: #f0c92f
       .partes-navegador__btn__texto
-        left: 50%
-        transform: translateX(-50%)
+        transform: translate(-50%)
 
     &--marcadores
       top: 38%

@@ -16,14 +16,14 @@
         
         p.mb-5 Actualmente, internet es una herramienta fundamental para muchas personas en diversas tareas que pueden ir desde consultar una receta hasta permitir una reunión de trabajo, sin embargo, muchos desconocen la evolución que ha tenido, su origen y la forma en que se usó desde su inicio; por ello, les invitamos a ver atentamente el siguiente video y a sacar sus propias conclusiones:
 
-        //- iframe.mb-6(
-        //-   width='100%', 
-        //-   height='600', 
-        //-   src='https://www.youtube.com/embed/OUA-M4LqynA', 
-        //-   frameborder='0', 
-        //-   allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
-        //-   allowfullscreen=''
-        //- )
+        iframe.mb-6(
+          width='100%', 
+          height='600', 
+          src='https://www.youtube.com/embed/-JVdH8ne-2s', 
+          frameborder='0', 
+          allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
+          allowfullscreen=''
+        )
 
         #t_1_1_1.header-ecored--b.mb-5
           h2 2.1.2 ¿Qué son los navegadores?
@@ -38,8 +38,17 @@
                 br
                 | Los navegadores son aplicaciones que permiten a los usuarios de internet encontrar lo que desean con facilidad, es una interfaz gráfica que permite a los internautas visualizar cualquier tipo de archivo multimedia independientemente de su localización o formato. En casi todos los casos se encuentra un navegador en todo tipo de sistemas operativos, lo que permite sin ser expertos, navegar por el interesante mundo de la red de internet.
 
+        iframe.mb-6(
+          width='100%', 
+          height='600', 
+          src='https://www.youtube.com/embed/eml0TxkJFIM', 
+          frameborder='0', 
+          allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
+          allowfullscreen=''
+        )
+
         #t_1_1_1.header-ecored--b.mb-5
-          h2 2.1.2 ¿Qué son los navegadores?
+          h2 2.1.3 ¿Cúales son los mas usados en internet?
 
         p Las personas usan navegadores por diferentes características, pero ¿cuáles son los más usados?, ¿Por qué los usuarios los eligen? A continuación, conoceremos cada uno de estos aspectos con mayor detalle: 
           br
@@ -80,35 +89,14 @@
           | Ya conociendo estos aspectos, 
           strong está en la capacidad de seleccionar qué navegador es el que desea utilizar.
 
-        //- iframe.mb-6(
-        //-   width='100%', 
-        //-   height='600', 
-        //-   src='https://www.youtube.com/embed/OUA-M4LqynA', 
-        //-   frameborder='0', 
-        //-   allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
-        //-   allowfullscreen=''
-        //- )
-
-        //- iframe.mb-6(
-        //-   width='100%', 
-        //-   height='600', 
-        //-   src='https://www.youtube.com/embed/OUA-M4LqynA', 
-        //-   frameborder='0', 
-        //-   allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
-        //-   allowfullscreen=''
-        //- )
-        
-        //- #t_1_1.header-ecored.title-full-width
-        //-   h1 2.2  Buscadores
-
-        //- iframe.mb-5(
-        //-   width='100%', 
-        //-   height='600', 
-        //-   src='https://www.youtube.com/embed/OUA-M4LqynA', 
-        //-   frameborder='0', 
-        //-   allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
-        //-   allowfullscreen=''
-        //- )
+        iframe.mb-6(
+          width='100%', 
+          height='600', 
+          src='https://www.youtube.com/embed/24xhDJpGa6k', 
+          frameborder='0', 
+          allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
+          allowfullscreen=''
+        )
 
         .row.mb-6
           .col-6
@@ -120,27 +108,26 @@
         .header-ecored--b.mb-5
           h2 ¿Cómo funciona un motor de búsqueda?
 
-        p De acuerdo con lo descrito por Simone (2019) en el portal web Noticias LTDA: el trabajo de los motores de búsqueda se puede dividir en tres fases: 
+        p.mb-6 De acuerdo con lo descrito por Simone (2019) en el portal web Noticias LTDA: el trabajo de los motores de búsqueda se puede dividir en tres fases: 
           strong análisis, catalogación y respuesta.
 
-        .p-6
-          h1 GRAFICO
+        PestanasVerticales.mb-6
 
         #t_1_1.header-ecored.title-full-width
           h1 2.2.1 ¿Qué son los buscadores Web?
 
-        //- iframe.mb-5(
-        //-   width='100%', 
-        //-   height='600', 
-        //-   src='https://www.youtube.com/embed/OUA-M4LqynA', 
-        //-   frameborder='0', 
-        //-   allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
-        //-   allowfullscreen=''
-        //- )
+        iframe.mb-5(
+          width='100%', 
+          height='600', 
+          src='https://www.youtube.com/embed/99G6_y2TZPo', 
+          frameborder='0', 
+          allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
+          allowfullscreen=''
+        )
 
         .row.mb-6
           .col-6
-            p.h1 A diario buscamos casi cualquier cosa
+            p.h1 A diario buscamos casi cualquier cosa 
               strong.texto-azul.d-inline-block en internet.
           .col-6
             p Lo que conocemos como “Googlear” (o guglear), nos permite acceder a diversos tipos de información o recursos multimedia sea audio, video o imágenes, entre otros, dependiendo de la necesidad; pero, te has preguntado 
@@ -161,14 +148,14 @@
           | A continuación conoceremos algunos de los buscadores 
           strong más conocidos.
 
-        //- iframe.mb-6(
-        //-   width='100%', 
-        //-   height='600', 
-        //-   src='https://www.youtube.com/embed/OUA-M4LqynA', 
-        //-   frameborder='0', 
-        //-   allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
-        //-   allowfullscreen=''
-        //- )
+        iframe.mb-6(
+          width='100%', 
+          height='600', 
+          src='https://www.youtube.com/embed/dROvRuvnYd4', 
+          frameborder='0', 
+          allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
+          allowfullscreen=''
+        )
         
         #t_1_1_1.header-ecored--b.mb-5
           h2  2.2.3 Truncamientos y operadores booleanos
@@ -186,13 +173,18 @@
           .col-6
             img(src="@/assets/images/pages/tema2/img_1.svg")
 
-        #t_1_1_1.header-ecored--b.mb-5
+        #maomaomaomaoma.header-ecored--b.mb-5
           h2 ¿Qué es truncamiento?
 
-        p Son operadores que permiten ampliar una búsqueda, se sitúan a la derecha o izquierda de un término sustituyendo uno o varios caracteres y se utilizan cuando es necesario localizar los términos derivados de la palabra a buscar: prefijos, sufijos, variantes léxicas, etc.
+        p.mb-6 Son operadores que permiten ampliar una búsqueda, se sitúan a la derecha o izquierda de un término sustituyendo uno o varios caracteres y se utilizan cuando es necesario localizar los términos derivados de la palabra a buscar: prefijos, sufijos, variantes léxicas, etc.
 
-        .p-6
-          h1 GRAFICO
+        CuadrosTruncamiento.mb-6
+
+        BarraBusqueda.mb-5(texto="Truncamiento derecho (fortalece*) le permite recuperar variaciones a mano derecha de un término.")
+        
+        BarraBusqueda.mb-5(texto="Truncamiento izquierdo (*digital) le permite recuperar variaciones a mano izquierda de un término.")
+        
+        BarraBusqueda.mb-6(texto="“?” representa un solo carácter en una palabra a fin de obtener varias formas de esta.")
 
         p Por ejemplo, el término 
           strong escue?a 
@@ -218,20 +210,59 @@
           | Sus estrategias sirven para conectar palabras o frases dentro de un contexto. Por ejemplo, esto se da en una búsqueda con operadores booleanos como 
           strong AND, OR o NOT.
         
-        .row.justify-content-center
+        .row.justify-content-center.mb-5
           .col-10
             p 
               i Lo anterior se da al combinar las palabras clave de la búsqueda con los operadores, ya sea con uno o más de ellos, esto se hace para restringir o ampliar el rango de la búsqueda.
+        
+        Boleanos.mb-2
+
+        p Puede utilizar AND para buscar varios términos y que el resultado de la búsqueda incluya ambos términos así:
+
+        BarraBusqueda.mb-5(texto="Arquitectura AND diseño")
+
+        p El operador OR lo puede utilizar si quiere encontrar relaciones entre varios términos que desconoce, por ejemplo:
+
+        BarraBusqueda.mb-5(texto="Café OR salud")
+
+        p Con el operador NOT reducirá considerablemente los resultados de la búsqueda, ya que excluye un término, por ejemplo:
+
+        BarraBusqueda.mb-6(texto="América NOT fútbol")
+
+        .tarjeta-borde-amarillo.mb-6
+          p.mb-0
+            strong Nota: 
+            | hay que tener presente que los anteriores no son los únicos operadores y que también se usan símbolos para mejorar la búsqueda.
+            br
+            br
+            | Ahora que ya conoce algunos de los operadores y que no solo llegará como lo hacía antes de manera natural solo a escribir la consulta y filtrar entre los millones de páginas de información que necesitaba, recuerde que tiene a la mano unos operadores muy sencillos que le permitirán realizar consultas más precisas.
+
+        .header-ecored--b.mb-5
+          h2 2.2.4 Recomendaciones para la búsqueda de recursos
+
+        BarraBusqueda.mb-6(texto="¿Alguna vez les ha pasado que han intentado buscar una información muy específica")
+
+        p Cuando se realizan búsquedas en internet es importante tener en cuenta algunas recomendaciones que permitan obtener el resultado esperado y que sean realmente exitosas. ¿Qué se debe tener en cuenta?, podemos resumirlo en unos simples pasos:
+
+
 </template>
 
 <script>
 import LineaTiempo from './tema2/LineaTiempo'
 import PartesNavegador from './tema2/PartesNavegador'
+import PestanasVerticales from './tema2/PestanasVerticales'
+import CuadrosTruncamiento from './tema2/CuadrosTruncamiento'
+import BarraBusqueda from './tema2/BarraBusqueda'
+import Boleanos from './tema2/boleanos'
 export default {
   name: 'Tema2',
   components: {
     LineaTiempo,
     PartesNavegador,
+    PestanasVerticales,
+    CuadrosTruncamiento,
+    BarraBusqueda,
+    Boleanos,
   },
   data: () => ({
     navedadoresData: [
