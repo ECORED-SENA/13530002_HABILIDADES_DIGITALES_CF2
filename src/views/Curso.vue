@@ -118,4 +118,5 @@ export default {
     padding: 30px 50px
     border-radius: 15px
     border: 2px solid #FFA900
+    position: relative
 </style>

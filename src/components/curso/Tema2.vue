@@ -240,10 +240,68 @@
         .header-ecored--b.mb-5
           h2 2.2.4 Recomendaciones para la búsqueda de recursos
 
-        BarraBusqueda.mb-6(texto="¿Alguna vez les ha pasado que han intentado buscar una información muy específica")
+        BarraBusqueda(texto="¿Alguna vez les ha pasado que han intentado buscar una información muy específica")
+        .mb-5
+          .cuadro-dialogo--azul
+            span.h3 pero los resultados difieren de lo que realmente se quiere buscar?
 
-        p Cuando se realizan búsquedas en internet es importante tener en cuenta algunas recomendaciones que permitan obtener el resultado esperado y que sean realmente exitosas. ¿Qué se debe tener en cuenta?, podemos resumirlo en unos simples pasos:
+        p.mb-6 Cuando se realizan búsquedas en internet es importante tener en cuenta algunas recomendaciones que permitan obtener el resultado esperado y que sean realmente exitosas. ¿Qué se debe tener en cuenta?, podemos resumirlo en unos simples pasos:
 
+        CuadroPasosA.mb-7
+
+        .tarjeta-borde-amarillo.pb-5.mb-7
+          p.mb-0 Los invitamos a conocer el sistema de bibliotecas SENA, un sitio muy completo donde se puede encontrar, tanto recursos digitales en línea suscritos por el SENA, como en acceso libre, en diferentes disciplinas (salud, agricultura, biología, legislatura, administración, emprendimiento, entre otros) y en diferentes formatos (texto, audio, video, imagen).
+            br
+            br
+            | Recuerden que sus consultas solo estarán disponibles para la comunidad SENA y que, para ingresar, deben incluir su usuario y contraseña, que corresponde a su número de documento de identidad. Si lo desean, también pueden consultarlos a través de nuestra plataforma de descubrimiento IRIS, de manera centralizada encontrará infinidad de recursos de información que le serán útiles y podrá practicar estrategias de búsqueda: 
+
+          .boton-spbresale
+            .boton-spbresale__icono
+              img(src="@/assets/images/pages/tema2/img_24.svg")
+
+            a.h1(href="") Sistema de 
+              strong Bibliotecas SENA
+
+        #t_1_1_1.header-ecored--b.mb-5
+          h2 2.2.5 Tipos de licencia, referencia y recomendaciones uso de recursos
+
+        p.mb-6 Las páginas web que encontramos en internet están compuestas por imágenes, texto, animaciones, videos, sonidos, entre otros formatos. Todos estos contenidos digitales son creaciones de terceros y están sujetos a unas condiciones o limitaciones de uso, las cuales son definidas por su autor con la licencia elegida para ser publicada posteriormente. Esta licencia en su expresión básica las conoceremos como 
+          strong Copyright y Copyleft.
+
+
+        .row.align-items-end.justify-content-around
+          .col-4.pb-4
+            img(src="@/assets/images/pages/tema2/img_25.svg")
+          .col-4.pb-4
+            img(src="@/assets/images/pages/tema2/img_26.svg")
+        
+        .row.justify-content-around.mb-5
+          .col-4
+            .d-flex.justify-content-center.mb-4
+              span.title-bg-yellow.h1.mb-0 Copyright
+            p Este tipo de licencia limita la utilización del contenido digital, como también su modificación y distribución. Es una licencia restringida, en otras palabras, si un tercero desea utilizar el contenido requiere de autorización del autor y, en la mayoría de los casos, se paga por su uso.
+
+          .col-4
+            .d-flex.justify-content-center.mb-4
+              span.title-bg-yellow.h1.mb-0 Copyleft
+            p Los contenidos digitales que tienen este tipo de licencia permiten usar, copiar y redistribuir una obra y sus versiones derivadas simplemente reconociendo su autoría. En esencia, es el sistema opuesto al Copyright y no exige autorización del autor para su uso.
+
+        .row.justify-content-center.mb-5
+          .col-1
+            img(src="@/assets/images/pages/tema2/img_27.svg")
+          .col-6
+            p.fs-6
+              i Una de las licencias derivadas de Copyleft es la conocida como Creative Commons, se utiliza en todo tipo de contenidos en internet y la podemos identificar con el símbolo CC dentro de un círculo.
+
+        .barra-completa-azul.mb-5
+          span.h2.mb-0 Hagámoslo con un ejemplo
+
+        p.mb-5 Supongamos que necesitamos un video sobre salud mental en tiempos de Covid-19 y que sea de distribución gratuita. Para eso, nos dirigimos a YouTube y realizamos los siguientes pasos: 
+
+        CuadroPasosB
+
+        .tarjeta-borde-amarillo.pb-5.mb-7
+          p.mb-0 Algo muy importante que debemos hacer siempre es reconocer la autoría de este y cualquier contenido que esté ligado a la licencia CC, es lo único que se pide reconocer o, incluso, si es posible, hacer una donación a los creadores de contenido como incentivo y agradecimiento por todos esos maravillosos recursos digitales que nos brindan.
 
 </template>
 
@@ -254,6 +312,8 @@ import PestanasVerticales from './tema2/PestanasVerticales'
 import CuadrosTruncamiento from './tema2/CuadrosTruncamiento'
 import BarraBusqueda from './tema2/BarraBusqueda'
 import Boleanos from './tema2/boleanos'
+import CuadroPasosA from './tema2/CuadroPasosA'
+import CuadroPasosB from './tema2/CuadroPasosB'
 export default {
   name: 'Tema2',
   components: {
@@ -263,6 +323,8 @@ export default {
     CuadrosTruncamiento,
     BarraBusqueda,
     Boleanos,
+    CuadroPasosA,
+    CuadroPasosB,
   },
   data: () => ({
     navedadoresData: [
@@ -329,4 +391,53 @@ export default {
           &__texto
             transform: translateY(0)
             opacity: 1
+
+.cuadro-dialogo
+  &--azul
+    width: fit-content
+    padding: 10px 20px
+    background-color: #35D2DF
+    position: relative
+    margin-top: 10px
+    margin-left: 5%
+    &::before
+      content: ''
+      position: absolute
+      left: 60%
+      top: -10px
+      width: 20px
+      height: 20px
+      transform: rotate(45deg)
+      background-color: #35D2DF
+
+    span
+      color: #fff
+
+.boton-spbresale
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translate(-50%,60%)
+  background-color: #35D2DF
+  width: fit-content
+  padding: 15px 30px
+  border-radius: 10px
+  a
+    color: #fff
+  &__icono
+    position: absolute
+    width: 50px
+    top: 80%
+    left: 95%
+
+.title-bg-yellow
+  background-color: #FFA900
+  padding: 10px 15px
+  color: #fff
+
+.barra-completa-azul
+  padding: 15px 30px
+  background-color: #35D2DF
+  color: #fff
+  text-align: center
 </style>
