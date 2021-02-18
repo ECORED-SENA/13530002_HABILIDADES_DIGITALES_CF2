@@ -95,6 +95,7 @@ export default {
       const menuObject = this.menuData.find(
         item => item.routeName === this.$route.name,
       )
+      console.log(this.$route.name)
       if (!menuObject.submenu && !menuObject.submenu.length) {
         return {}
       } else {

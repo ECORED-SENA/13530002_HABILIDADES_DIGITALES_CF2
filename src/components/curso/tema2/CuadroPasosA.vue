@@ -15,8 +15,9 @@
           span.h1.mb-0 PASO 2
 
         .cuadro-pasos__paso__contenido
-          P Elegir el (los) recursos, es decir, la plataforma que vamos a utilizar para buscarlo y tener en cuenta el tipo de contenido que queremos como respuesta.
-          a.lnk(@click="showModal = true") Ver ejemplos.
+          P Elegir el (los) recurso(s), es decir, la plataforma que se va a utilizar en la búsqueda, teniendo en cuenta el tipo de contenido que se desea obtener como respuesta.
+          a.lnk(@click="showModal = true", @mouseover="indicador = false") Ver ejemplos.
+            IndicadorInteraccion(v-if="indicador")
 
     .col-6.py-5
       .cuadro-pasos__paso
@@ -24,9 +25,8 @@
           span.h1.mb-0 PASO 3
 
         .cuadro-pasos__paso__contenido
-          P Analizar la plataforma que utilizamos para la búsqueda. Reconoce los botones, entre ellos, el de filtrado. 
-            br
-            | Así tu consulta será más eficiente.
+          P Para que la consulta sea más eficiente, se debe analizar la plataforma que se va a utilizar para la búsqueda y reconocer los botones, entre ellos el de filtrado.
+
 
     .col-6.py-5
       .cuadro-pasos__paso
@@ -34,23 +34,28 @@
           span.h1.mb-0 PASO 4
 
         .cuadro-pasos__paso__contenido
-          P Utilizar una estrategia de búsqueda, como operadores booleanos o truncamiento, combínalos con las palabras claves y disfruta de mayor precisión a la hora de buscar.
+          P Utilizar una estrategia de búsqueda, como operadores booleanos o truncamiento, combinarlos con las palabras clave y obtener mayor precisión a la hora de realizar una búsqueda.
 
   .cuadro-pasos__cuotacion
     .cuadro-pasos__cuotacion__icono
       img(src="@/assets/images/pages/tema1/ico1.svg")
     .cuadro-pasos__cuotacion__texto
-      span Si no encuentran lo que buscan,
+      span Si 
+        strong no 
+        | encuentra lo que se quiere buscar. 
         br
-        strong ¡hay que hacerlo de nuevo!
+        strong ¡Realizar el procedimiento nuevamente!
 
   .cuadro-pasos__modal(v-if="showModal")
     .cuadro-pasos__modal__cerrar(@click="showModal = false")
       img(src="@/assets/images/pages/tema2/cerrar.svg")
-    p Por ejemplo: si busco un contenido multimedia, como una imagen o video, podría utilizar pixabay (https://pixabay.com/es/), donde puedo encontrar millones de imágenes gratuitas y videos con licencia CC. Pero, si lo que quiero consultar es algo académico, utilizo Google Académico o Google Scholar, como se le conoce en inglés, que es una base de datos de búsqueda de noticias, revistas académicas, ensayos, etc. 
+    p Si busco un contenido multimedia, como una imagen o video, podría utilizar 
+      strong pixabay 
+      | (https://pixabay.com/es/), donde puedo encontrar millones de imágenes gratuitas y videos con licencia CC. Pero, si lo que quiero consultar es algo académico, utilizo 
+      strong Google Académico o Google Scholar, 
+      | como se le conoce en inglés, que es una base de datos de búsqueda de noticias, revistas académicas, ensayos, etc.
       br
-      br
-      | Así, podemos tener a la mano algunas bases de datos según el tipo de consulta que deseamos realizar, algunos ejemplos:
+      | Se pueden tener a la mano algunas bases de datos, según el tipo de consulta que se va a realizar. Ejemplos.
 
     .cuadro-pasos__data-table
       .cuadro-pasos__data-table__header
@@ -105,9 +110,14 @@
 </template>
 
 <script>
+import IndicadorInteraccion from '../../IndicadorInteraccion'
 export default {
   name: 'CuadroPasosA',
+  components: {
+    IndicadorInteraccion,
+  },
   data: () => ({
+    indicador: true,
     showModal: false,
   }),
 }
@@ -212,4 +222,7 @@ export default {
         display: block
         text-align: center
         line-height: 1.2em
+
+.lnk
+  position: relative
 </style>

@@ -4,15 +4,15 @@ export const global = {
     'Desarrollo de habilidades digitales para la gestión de la información ',
   descripcionCurso:
     'Este módulo aborda conceptos básicos relacionados con los dispositivos usados para navegar en internet, así como la influencia que tiene el uso de las tecnologías de información y comunicación - TIC en diferentes contextos',
-  imagen: require('@/assets/images/pages/tema1/img3.svg'),
+  imagen: require('@/assets/images/pages/tema2/img_21.svg'),
 }
 
 export const desarrolloDeContenidos = [
-  {
-    type: 'play',
-    title: 'Introducción',
-    route: 'introduccion',
-  },
+  // {
+  //   type: 'play',
+  //   title: 'Introducción',
+  //   route: 'introduccion',
+  // },
   {
     type: '1',
     title: 'Componentes',
@@ -40,43 +40,61 @@ export const menuPrincipal = {
     {
       routeName: 'tema1',
       icon: 'fa fa-play-circle',
-      title: '1. Empezando el aprendizaje, dispositivos y TIC',
-      tags: ['TIC', 'Internet', 'WiFi', 'DispositivosElectrónicos'],
+      title: '2. Empezando el aprendizaje, dispositivos y TIC',
+      tags: [
+        'TIC',
+        'Internet',
+        'Truncamiento',
+        'OperadoresBooleanos',
+        'Digital',
+      ],
       submenu: [
         {
           icon: 'fa fa-file-text',
-          title: '1.1 Dispositivos',
-          hash: 't_1_1',
+          title: '2.1 Internet',
+          hash: 't_2_1',
         },
         {
           icon: 'fa fa-file-text',
-          title: '1.1.1 Reconocimiento de dispositivos',
-          hash: 't_1_1_1',
+          title: '2.1.1 ¿Qué son los navegadores?',
+          hash: 't_2_1_1',
         },
         {
           icon: 'fa fa-file-text',
-          title: '1.1.2 Tipos de dispositivos para conectarse a internet',
-          hash: 't_1_1_2',
+          title: '2.2 Navegadores',
+          hash: 't_2_2',
         },
         {
           icon: 'fa fa-file-text',
-          title: '1.2 Impacto de las TIC',
-          hash: 't_1_2',
+          title:
+            '2.2.1 ¿Cuáles son los navegadores más utilizados en Internet?',
+          hash: 't_2_2_1',
         },
         {
           icon: 'fa fa-file-text',
-          title: '1.2.1 Impacto Académico',
-          hash: 't_1_2_1',
+          title: '2.3 Buscadores',
+          hash: 't_2_3',
         },
         {
           icon: 'fa fa-file-text',
-          title: '1.2.2 Impacto Social',
-          hash: 't_1_2_2',
+          title: '2.3.1 ¿Cuáles son los buscadores más utilizados?',
+          hash: 't_2_3_1',
         },
         {
           icon: 'fa fa-file-text',
-          title: '1.2.3 Impacto Emprendimiento',
-          hash: 't_1_2_3',
+          title: '2.3.2 Truncamientos y operadores booleanos',
+          hash: 't_2_3_2',
+        },
+        {
+          icon: 'fa fa-file-text',
+          title: '2.3.3 Recomendaciones para la búsqueda de recursos',
+          hash: 't_2_3_3',
+        },
+        {
+          icon: 'fa fa-file-text',
+          title:
+            '2.3.4 Tipos de licencia, referencias y recomendaciones para el uso de recursos',
+          hash: 't_2_3_4',
         },
       ],
     },

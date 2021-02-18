@@ -2,10 +2,11 @@
 .boleanos
   .row.mb-3
     .col-4(
-      @mouseover="seleccionado = 1",
+      @mouseover="seleccionado = 1; indicador = false",
       @mouseleave="seleccionado = 0"
     )
       .tarjeta--gris
+        IndicadorInteraccion(v-if="indicador")
         .boleanos__img(:class="{'boleanos__img--seleccionado': seleccionado === 1}")
           img(src="@/assets/images/pages/tema2/img_7.svg")
         .boleanos__texto
@@ -16,7 +17,7 @@
             span Quiere decir que incluya los dos términos.
 
     .col-4(
-      @mouseover="seleccionado = 2",
+      @mouseover="seleccionado = 2; indicador = false",
       @mouseleave="seleccionado = 0"
     )
       .tarjeta--gris
@@ -30,7 +31,7 @@
             span Esta estrategia muestra los resultados que incluyan cualquiera de los dos términos o los dos a la vez.
       
     .col-4(
-      @mouseover="seleccionado = 3",
+      @mouseover="seleccionado = 3; indicador = false",
       @mouseleave="seleccionado = 0"
     )
       .tarjeta--gris
@@ -46,20 +47,25 @@
   .row
     .col-4
       .boleanos__tips(:class="{'boleanos__tips--seleccionado': seleccionado === 1}")
-        p <strong>AND (Y):</strong> Recupera las referencias que incluyan ambos términos.
+        p <strong>AND (Y):</strong> recupera las referencias que incluyan ambos términos.
     .col-4
       .boleanos__tips(:class="{'boleanos__tips--seleccionado': seleccionado === 2}")
-        p <strong>OR (O):</strong> Recupera las referencias que incluyan cualquiera de los términos o los dos a la vez.
+        p <strong>OR (O):</strong> recupera las referencias que incluyan cualquiera de los términos, o los dos a la vez.
     .col-4
       .boleanos__tips(:class="{'boleanos__tips--seleccionado': seleccionado === 3}")
-        p <strong>NOT (NO):</strong> Recupera las referencias que aparezca sólo el primer término.
+        p <strong>NOT (NO):</strong> recupera las referencias donde aparezca solo el primer término.
 
 </template>
 
 <script>
+import IndicadorInteraccion from '../../IndicadorInteraccion'
 export default {
   name: 'Boleanos',
+  components: {
+    IndicadorInteraccion,
+  },
   data: () => ({
+    indicador: true,
     seleccionado: 0,
   }),
 }

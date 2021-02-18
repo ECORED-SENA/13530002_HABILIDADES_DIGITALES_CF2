@@ -1,6 +1,6 @@
 <template lang="pug">
 .linea-tiempo
-  .linea-tiempo__row(v-for="(item,index) of datosLineaTiempo", :ref="'linea-tiempo-item-'+index")
+  .linea-tiempo__row(v-for="(item,index) of datosLineaTiempo", :ref="'linea-tiempo-item-'+index" @mouseover="mostrarIndicador = false")
     .linea-tiempo__content
       .linea-tiempo__text
         span.h1.mb-2 {{item.ano}}
@@ -11,14 +11,18 @@
         .linea-tiempo__icon__container
           .linea-tiempo__icon__inner
           img(:src="item.img")
-
-  
+          IndicadorInteraccion(v-if="mostrarIndicador && index === 0")
 </template>
 
 <script>
+import IndicadorInteraccion from '../../IndicadorInteraccion'
 export default {
   name: 'LineaTiempo',
+  components: {
+    IndicadorInteraccion,
+  },
   data: () => ({
+    mostrarIndicador: true,
     datosLineaTiempo: [
       {
         ano: '1971',
@@ -40,7 +44,7 @@ export default {
       {
         ano: '1995',
         texto:
-          'Se vende el primer libro de <strong>Amazon. Ebay</strong> vende su primer producto: un puntero lasser.',
+          'Se vende el primer libro de <strong>Amazon. Ebay</strong> vende su primer producto: un puntero láser.',
         img: require('@/assets/images/pages/tema2/img_14.svg'),
       },
       {
@@ -83,7 +87,7 @@ export default {
       },
       {
         ano: '2007',
-        texto: 'Once años después nace el primer <strong>iPhone</strong>.',
+        texto: 'Once años después surge el primer <strong>iPhone</strong>.',
         img: require('@/assets/images/pages/tema2/img_19.svg'),
       },
       {
@@ -250,4 +254,6 @@ export default {
     position: absolute
     background: #00D1E3
     transform: translate(-50%,0)
+
+  @media screen and (min-width: $breakpoint-tablet)
 </style>

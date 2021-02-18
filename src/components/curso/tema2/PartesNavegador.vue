@@ -3,36 +3,51 @@
   .partes-navegador__fondo
     img(src="@/assets/images/pages/tema2/img_22.svg")
   .partes-navegador__btn-contenedor
-    .partes-navegador__btn.partes-navegador__btn--flechas
+    .partes-navegador__btn.partes-navegador__btn--flechas(@mouseover="indicador = false")
       .partes-navegador__btn__texto
         span Retroceder / Avanzar pág.
-    .partes-navegador__btn.partes-navegador__btn--actualizar
+    .partes-navegador__btn.partes-navegador__btn--actualizar(@mouseover="indicador = false")
       .partes-navegador__btn__texto
         span Actualizar página
-    .partes-navegador__btn.partes-navegador__btn--home
+    .partes-navegador__btn.partes-navegador__btn--home(@mouseover="indicador = false")
       .partes-navegador__btn__texto
         span Home
-    .partes-navegador__btn.partes-navegador__btn--busqueda
+    .partes-navegador__btn.partes-navegador__btn--busqueda(@mouseover="indicador = false")
       .partes-navegador__btn__texto
         span Barra de búsqueda
-    .partes-navegador__btn.partes-navegador__btn--marcadores
+    .partes-navegador__btn.partes-navegador__btn--marcadores(@mouseover="indicador = false")
       .partes-navegador__btn__texto
         span Marcadores
-    .partes-navegador__btn.partes-navegador__btn--descargas
+    .partes-navegador__btn.partes-navegador__btn--descargas(@mouseover="indicador = false")
       .partes-navegador__btn__texto
         span Gestor de descargas
-    .partes-navegador__btn.partes-navegador__btn--pestana
+    .partes-navegador__btn.partes-navegador__btn--pestana(@mouseover="indicador = false")
       .partes-navegador__btn__texto
         span Navegación por pestañas
+    .indicador(v-if="indicador")
+      IndicadorInteraccion
 
 </template>
 <script>
+import IndicadorInteraccion from '../../IndicadorInteraccion'
 export default {
   name: 'PartesNavegador',
+  components: {
+    IndicadorInteraccion,
+  },
+  data: () => ({
+    indicador: true,
+  }),
 }
 </script>
 
 <style lang="sass" scoped>
+.indicador
+  position: absolute
+  top: 28%
+  left: 2.5%
+  width: 100px
+  height: 100px
 .partes-navegador
   position: relative
   &__fondo

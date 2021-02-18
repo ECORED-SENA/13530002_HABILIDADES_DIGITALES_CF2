@@ -7,11 +7,11 @@
           span.h1.mb-0 PASO 1
 
         .cuadro-pasos__paso__contenido
-          P Lo primero que debemos hacer es escribir en la caja de búsqueda lo que deseamos encontrar, en este caso, sobre salud mental en tiempos de Covid-19:
-          
+          P Lo primero que se hace es escribir en la caja de búsqueda lo que se desea encontrar; en este caso se trata de salud mental en tiempos de Covid-19.
+
           img.mb-4(src="@/assets/images/pages/tema2/img_28.svg")
 
-          .h2.mb-0.text-center Aparecerán unos resultados que coinciden con la búsqueda.
+          .h2.mb-0.text-center Aparecen unos resultados que coinciden con lo introducido en la búsqueda.
 
     .col-10.py-5
       .cuadro-pasos__paso
@@ -19,12 +19,12 @@
           span.h1.mb-0 PASO 2
 
         .cuadro-pasos__paso__contenido
-          P Lo segundo que hago es presionar la opción de 
+          P Lo segundo que se hace es presionar la opción de 
             strong filtrar.
 
           img.mb-4(src="@/assets/images/pages/tema2/img_29.jpg")
 
-          .h2.mb-0.text-center En esta ventana de opciones elegimos, en la categoría de características, la opción Creative Commons.
+          .h2.mb-0.text-center En esta ventana de opciones, se elige, en la categoría de características, la opción Creative Commons.
 
     .col-10.py-5
       .cuadro-pasos__paso
@@ -32,7 +32,8 @@
           span.h1.mb-0 PASO 3
 
         .cuadro-pasos__paso__contenido
-          .h2 Como tercer y último paso, elegimos el video que necesitamos entre los que filtramos en la búsqueda, los cuales cumplen con la característica CC. 
+          .h2 Como tercer paso, se elige el video que se quiere dentro de los que se filtraron en la búsqueda, y que cumpla con la característica CC.
+
 
 
 </template>

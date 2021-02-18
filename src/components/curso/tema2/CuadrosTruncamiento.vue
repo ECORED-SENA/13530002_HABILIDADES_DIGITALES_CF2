@@ -2,37 +2,45 @@
 .cuadros-truncamiento
   .row
     .col-4
-      .cuadros-truncamiento__item
+      .cuadros-truncamiento__item(@mouseover="indicador = false",)
         .cuadros-truncamiento__item__icono
           span *
+          IndicadorInteraccion(v-if="indicador")
         .cuadros-truncamiento__item__texto
           p.mb-0 
             strong El asterisco (*) 
-            | representa cualquier grupo de caracteres, incluida la ausencia de caracteres.
+            | representa a cualquier grupo de caracteres, incluida la ausencia de caracteres.
 
     .col-4
-      .cuadros-truncamiento__item
+      .cuadros-truncamiento__item(@mouseover="indicador = false",)
         .cuadros-truncamiento__item__icono
           span ?
         .cuadros-truncamiento__item__texto
           p.mb-0
             strong El signo de interrogación (?) 
-            | representa cualquier carácter único.
+            | representa a cualquier caracter único.
 
     .col-4
-      .cuadros-truncamiento__item
+      .cuadros-truncamiento__item(@mouseover="indicador = false",)
         .cuadros-truncamiento__item__icono
           span $
         .cuadros-truncamiento__item__texto
           p.mb-0 
             strong El signo ($) 
-            | representa la presencia de un carácter o la ausencia de caracteres.
+            | representa la presencia de un caracter o la ausencia de caracteres.
 
 </template>
 
 <script>
+import IndicadorInteraccion from '../../IndicadorInteraccion'
 export default {
   name: 'CuadrosTruncamiento',
+  components: {
+    IndicadorInteraccion,
+  },
+  data: () => ({
+    indicador: true,
+  }),
 }
 </script>
 
