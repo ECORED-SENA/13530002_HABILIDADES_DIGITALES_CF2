@@ -1,7 +1,7 @@
 <template lang="pug">
 .boleanos
-  .row.mb-3
-    .col-4(
+  .row.justify-content-center.mb-3
+    .col-sm-8.col-lg-4.mb-4.mb-lg-0(
       @mouseover="seleccionado = 1; indicador = false",
       @mouseleave="seleccionado = 0"
     )
@@ -16,7 +16,7 @@
             span TEXTO1 <strong>AND</strong> TEXTO2 
             span Quiere decir que incluya los dos términos.
 
-    .col-4(
+    .col-sm-8.col-lg-4.mb-4.mb-lg-0(
       @mouseover="seleccionado = 2; indicador = false",
       @mouseleave="seleccionado = 0"
     )
@@ -30,7 +30,7 @@
             span TEXTO1 <strong>OR</strong> TEXTO2 
             span Esta estrategia muestra los resultados que incluyan cualquiera de los dos términos o los dos a la vez.
       
-    .col-4(
+    .col-sm-8.col-lg-4.mb-4.mb-lg-0(
       @mouseover="seleccionado = 3; indicador = false",
       @mouseleave="seleccionado = 0"
     )

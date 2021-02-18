@@ -61,6 +61,9 @@ export default {
       padding: 30px 50px
       background-color: #fff
 
+    @media screen and (max-width: 768px)
+      padding: 25px 15px
+
   .tarjeta--overlay
     position: relative
     padding-left: 75px

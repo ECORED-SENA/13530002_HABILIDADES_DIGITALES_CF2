@@ -48,9 +48,9 @@
 
         .tarjeta--azul.mb-6
           .row.align-items-center
-            .col-5
+            .col-lg-5.mb-4.mb-lg-0
               img(src="@/assets/images/pages/tema2/img_21.svg")
-            .col-7
+            .col-lg-7
               p Internet aporta un amplio mundo de conocimiento y de entretenimiento debido a que, en 1 (un) minuto, se crean más de 600 páginas web, lo que hace que este universo sea cada vez más y más vasto.
                 br
                 br
@@ -114,11 +114,11 @@
         )
 
         .row.mb-4
-          .col-6
+          .col-md-6
             p.h1 Cuando haya estudiado lo enseñado sobre el navegador, es indispensable que tenga en cuenta las siguientes 
               span.texto-azul variables: 
               | seguridad, rapidez, funcionalidad y consumo.
-          .col-6
+          .col-md-6
             p Otro aspecto importante que debe conocer es que, para poder utilizar motores de búsqueda y tener acceso a las direcciones URL, los navegadores se comunican con servidores web a través de un 
               strong protocolo de transferencia de hipertextos.
 
@@ -155,10 +155,10 @@
         p.mb-5 Siempre estamos buscando diferentes tipos de información por Internet, como por ejemplo: textos, audios, videos o imágenes, entre muchos otros; para llevar a cabo esta búsqueda, vamos a necesitar un buscador de Internet. 
 
         .row.mb-4
-          .col-6
+          .col-md-6
             p.h1 ¿Qué es un buscador o motor de búsqueda? 
 
-          .col-6
+          .col-md-6
             p Es un mecanismo que permite acceder a distintos tipos de información a partir de palabras clave.
 
 
@@ -200,7 +200,7 @@
           h2 2.3.2 Truncamientos y operadores booleanos
 
         .row.justify-content-between.align-items-center.mb-6
-          .col-5
+          .col-lg-5
             p.h1 
               strong Todos, en algún momento hemos deseado saber cómo llevar a cabo 
                 span.texto-azul búsquedas más eficientes 
@@ -208,7 +208,7 @@
             p Cuando se utilizan motores de búsqueda para lo que sea que se necesite buscar (investigación, curiosidades, elaborar un documento, encontrar una herramienta digital para satisfacer una necesidad), siempre, en los resultados de la búsqueda, se encontrará información extra; por ejemplo, si se busca la palabra 
               strong gatos
               | , en menos de 1 segundo pueden aparecer cerca de 412.000.000 resultados; entonces, existe la posibilidad de utilizar una técnica para encontrar la información correcta, en bases de datos y en sitios web, obteniendo resultados que sean más exactos, y es aquí donde entran a cooperar, el truncamiento y los operadores booleanos.
-          .col-6
+          .col-lg-6
             img(src="@/assets/images/pages/tema2/img_1.svg")
 
         .header-ecored--b.mb-5
@@ -336,27 +336,29 @@
           strong Copyright y como Copyleft.
 
 
-        .row.align-items-end.justify-content-around
-          .col-4.pb-4
+        .row.align-items-end.justify-content-around.d-none.d-md-flex
+          .col-md-6.col-4.pb-4
             img(src="@/assets/images/pages/tema2/img_25.svg")
-          .col-4.pb-4
+          .col-md-6.col-4.pb-4
             img(src="@/assets/images/pages/tema2/img_26.svg")
         
         .row.justify-content-around.mb-5
-          .col-4
+          .col-sm-8.col-md-6.col-lg-4.mb-4.mb-md-0
+            img.d-md-none.mb-4(src="@/assets/images/pages/tema2/img_25.svg")
             .d-flex.justify-content-center.mb-4
               span.title-bg-yellow.h1.mb-0 Copyright
             p Este tipo de licencia limita la utilización del contenido digital, como también su modificación y distribución. Es una licencia restringida; si un tercero desea utilizar el contenido, requiere de la autorización del autor y, en la mayoría de los casos, se paga por su uso.
 
-          .col-4
+          .col-sm-8.col-md-6.col-lg-4.mb-4.mb-md-0
+            img.d-md-none.mb-4(src="@/assets/images/pages/tema2/img_26.svg")
             .d-flex.justify-content-center.mb-4
               span.title-bg-yellow.h1.mb-0 Copyleft
             p Los contenidos digitales que tienen este tipo de licencia, permiten usar, copiar y redistribuir una obra y sus versiones derivadas simplemente reconociendo su autoría. En esencia, es el sistema opuesto al Copyright y no exige autorización del autor para su uso.
 
-        .row.justify-content-center.mb-5
-          .col-1
+        .row.justify-content-center.align-items-center.mb-5
+          .col-2.col-lg-1
             img(src="@/assets/images/pages/tema2/img_27.svg")
-          .col-6
+          .col-10.col-md-8.col-lg-6
             p.fs-6
               i Una de las licencias derivadas de Copyleft es la conocida como Creative Commons, se utiliza en todo tipo de contenidos en internet y la podemos identificar con el símbolo CC dentro de un círculo.
 

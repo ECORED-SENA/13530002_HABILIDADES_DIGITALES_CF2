@@ -1,7 +1,7 @@
 <template lang="pug">
 .cuadro-pasos.mb-6
   .row
-    .col-6.py-5
+    .col-lg-6.py-5
       .cuadro-pasos__paso
         .cuadro-pasos__paso__cabeza
           span.h1.mb-0 PASO 1
@@ -9,7 +9,7 @@
         .cuadro-pasos__paso__contenido
           P Definir y acortar lo que necesitamos consultar.
 
-    .col-6.py-5
+    .col-lg-6.py-5
       .cuadro-pasos__paso
         .cuadro-pasos__paso__cabeza
           span.h1.mb-0 PASO 2
@@ -19,7 +19,7 @@
           a.lnk(@click="showModal = true", @mouseover="indicador = false") Ver ejemplos.
             IndicadorInteraccion(v-if="indicador")
 
-    .col-6.py-5
+    .col-lg-6.py-5
       .cuadro-pasos__paso
         .cuadro-pasos__paso__cabeza
           span.h1.mb-0 PASO 3
@@ -28,7 +28,7 @@
           P Para que la consulta sea más eficiente, se debe analizar la plataforma que se va a utilizar para la búsqueda y reconocer los botones, entre ellos el de filtrado.
 
 
-    .col-6.py-5
+    .col-lg-6.py-5
       .cuadro-pasos__paso
         .cuadro-pasos__paso__cabeza
           span.h1.mb-0 PASO 4
@@ -174,7 +174,8 @@ export default {
       background-color: #fff
 
   &__modal
-    position: absolute
+    position: fixed
+    max-width: 1140px
     top: 50%
     left: 50%
     width: 95%
@@ -184,6 +185,7 @@ export default {
     background-color: #fff
     box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.2)
     transform: translate(-50%,-50%)
+    z-index: 1000000
 
     &__cerrar
       cursor: pointer
@@ -222,6 +224,16 @@ export default {
         display: block
         text-align: center
         line-height: 1.2em
+
+  @media screen and (max-width: 768px)
+    padding: 25px
+
+    &__cuotacion
+      position: relative
+      transform: translateX(0)
+      left: auto
+      width: fit-content
+      padding-left: 50px
 
 .lnk
   position: relative

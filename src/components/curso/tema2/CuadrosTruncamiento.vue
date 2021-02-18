@@ -1,7 +1,7 @@
 <template lang="pug">
 .cuadros-truncamiento
   .row
-    .col-4
+    .col-lg-4.mb-4.mb-lg-0
       .cuadros-truncamiento__item(@mouseover="indicador = false",)
         .cuadros-truncamiento__item__icono
           span *
@@ -11,7 +11,7 @@
             strong El asterisco (*) 
             | representa a cualquier grupo de caracteres, incluida la ausencia de caracteres.
 
-    .col-4
+    .col-lg-4.mb-4.mb-lg-0
       .cuadros-truncamiento__item(@mouseover="indicador = false",)
         .cuadros-truncamiento__item__icono
           span ?
@@ -20,7 +20,7 @@
             strong El signo de interrogación (?) 
             | representa a cualquier caracter único.
 
-    .col-4
+    .col-lg-4.mb-4.mb-lg-0
       .cuadros-truncamiento__item(@mouseover="indicador = false",)
         .cuadros-truncamiento__item__icono
           span $

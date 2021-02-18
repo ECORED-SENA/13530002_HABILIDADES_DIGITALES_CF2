@@ -255,5 +255,40 @@ export default {
     background: #00D1E3
     transform: translate(-50%,0)
 
-  @media screen and (min-width: $breakpoint-tablet)
+  @media screen and (max-width: 768px)
+    &__row
+      &:nth-child(even)
+        .linea-tiempo
+          &__text
+            margin-left: 40px
+        &:hover
+          .linea-tiempo__icon__container
+            transform: scale(1.3) translateX(-5px)
+          .linea-tiempo__text
+                transform: translateX(-10px)
+      &:hover
+        .linea-tiempo__icon__container
+          transform: scale(1.3) translateX(5px)
+        .linea-tiempo__text
+          transform: translateX(10px)
+    &__text
+      margin-right: 40px
+
+  @media screen and (max-width: 450px)
+    &__icon
+
+      &__container
+        width: 100px
+        height: 100px
+
+      &__inner
+        width: 100%
+        height: 100%
+
+        &::after
+          width: 70px
+          height: 70px
+
+      img
+        width: 40px
 </style>

@@ -1,7 +1,7 @@
 <template lang="pug">
 .cuadro-pasos.mb-6
   .row.justify-content-center
-    .col-10.py-5
+    .col-md-10.py-5
       .cuadro-pasos__paso
         .cuadro-pasos__paso__cabeza
           span.h1.mb-0 PASO 1
@@ -13,7 +13,7 @@
 
           .h2.mb-0.text-center Aparecen unos resultados que coinciden con lo introducido en la búsqueda.
 
-    .col-10.py-5
+    .col-md-10.py-5
       .cuadro-pasos__paso
         .cuadro-pasos__paso__cabeza
           span.h1.mb-0 PASO 2
@@ -26,7 +26,7 @@
 
           .h2.mb-0.text-center En esta ventana de opciones, se elige, en la categoría de características, la opción Creative Commons.
 
-    .col-10.py-5
+    .col-md-10.py-5
       .cuadro-pasos__paso
         .cuadro-pasos__paso__cabeza
           span.h1.mb-0 PASO 3
@@ -146,4 +146,6 @@ export default {
         display: block
         text-align: center
         line-height: 1.2em
+  @media screen and (max-width: 768px)
+    padding: 25px
 </style>

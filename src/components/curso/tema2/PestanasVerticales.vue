@@ -1,32 +1,33 @@
 <template lang="pug">
 .pestanas-vert
   .row.align-items-center
-    .col-3
-      .pestanas-vert__pestana__contenedor
-        .pestanas-vert__pestana(
-          @mouseover="indicador = false",
-          @click="seleccionado = 'f1'"
-          :class="{'pestanas-vert__pestana--activo': seleccionado === 'f1'}"
-        )
-          span.h2 FASE 1
-          IndicadorInteraccion(v-if="indicador")
-      
-      .pestanas-vert__pestana__contenedor
-        .pestanas-vert__pestana(
-          @mouseover="indicador = false",
-          @click="seleccionado = 'f2'"
-          :class="{'pestanas-vert__pestana--activo': seleccionado === 'f2'}"
-        )
-          span.h2 FASE 2
-      .pestanas-vert__pestana__contenedor
-        .pestanas-vert__pestana(
-          @mouseover="indicador = false",
-          @click="seleccionado = 'f3'"
-          :class="{'pestanas-vert__pestana--activo': seleccionado === 'f3'}"
-        )
-          span.h2 FASE 3
+    .col-lg-3
+      .d-flex.d-lg-block
+        .pestanas-vert__pestana__contenedor
+          .pestanas-vert__pestana(
+            @mouseover="indicador = false",
+            @click="seleccionado = 'f1'"
+            :class="{'pestanas-vert__pestana--activo': seleccionado === 'f1'}"
+          )
+            span.h2 FASE 1
+            IndicadorInteraccion(v-if="indicador")
+        
+        .pestanas-vert__pestana__contenedor
+          .pestanas-vert__pestana(
+            @mouseover="indicador = false",
+            @click="seleccionado = 'f2'"
+            :class="{'pestanas-vert__pestana--activo': seleccionado === 'f2'}"
+          )
+            span.h2 FASE 2
+        .pestanas-vert__pestana__contenedor
+          .pestanas-vert__pestana(
+            @mouseover="indicador = false",
+            @click="seleccionado = 'f3'"
+            :class="{'pestanas-vert__pestana--activo': seleccionado === 'f3'}"
+          )
+            span.h2 FASE 3
 
-    .col-9
+    .col-lg-9
       .tarjeta--gris.pestanas-vert__texto
         p(v-if="seleccionado === 'f1'") La primera fase es realizada por programas llamados spider, robot o crawler. Escanean la web de forma metódica y automatizada. Sus resultados crean el índice general de Internet.
         p(v-else-if="seleccionado === 'f2'") Las páginas seleccionadas por los rastreadores se guardan, y se analiza la parte textual, que se toma como base para proporcionar la respuesta a los usuarios. Este último paso requiere la capacidad de los motores de búsqueda, para ordenar los sitios, con base en los datos por relevancia.
@@ -94,4 +95,14 @@ export default {
     p
       text-align: left
       margin: 0
+
+
+  @media screen and (max-width: 992px)
+    &__pestana
+      &__contenedor
+        margin-bottom: 15px
+        padding-right: 0px
+        flex: 1
+      span
+        text-align: center
 </style>
