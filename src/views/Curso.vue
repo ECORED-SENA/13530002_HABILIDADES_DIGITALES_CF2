@@ -11,7 +11,6 @@ export default {
 <style lang="sass" scoped>
 
 ::v-deep
-
   .header-ecored
     padding-top: 3rem
     margin: 0 0 3rem 0

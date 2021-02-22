@@ -46,65 +46,66 @@
         br
         strong ¡Realizar el procedimiento nuevamente!
 
-  .cuadro-pasos__modal(v-if="showModal")
-    .cuadro-pasos__modal__cerrar(@click="showModal = false")
-      img(src="@/assets/images/pages/tema2/cerrar.svg")
-    p Si busco un contenido multimedia, como una imagen o video, podría utilizar 
-      strong pixabay 
-      | (https://pixabay.com/es/), donde puedo encontrar millones de imágenes gratuitas y videos con licencia CC. Pero, si lo que quiero consultar es algo académico, utilizo 
-      strong Google Académico o Google Scholar, 
-      | como se le conoce en inglés, que es una base de datos de búsqueda de noticias, revistas académicas, ensayos, etc.
-      br
-      | Se pueden tener a la mano algunas bases de datos, según el tipo de consulta que se va a realizar. Ejemplos.
+  .cuadro-pasos__modal__container(v-if="showModal" @click="showModal = false")
+    .cuadro-pasos__modal(@click.stop="false")
+      .cuadro-pasos__modal__cerrar(@click="showModal = false")
+        img(src="@/assets/images/pages/tema2/cerrar.svg")
+      p Si busco un contenido multimedia, como una imagen o video, podría utilizar 
+        strong pixabay 
+        | (https://pixabay.com/es/), donde puedo encontrar millones de imágenes gratuitas y videos con licencia CC. Pero, si lo que quiero consultar es algo académico, utilizo 
+        strong Google Académico o Google Scholar, 
+        | como se le conoce en inglés, que es una base de datos de búsqueda de noticias, revistas académicas, ensayos, etc.
+        br
+        | Se pueden tener a la mano algunas bases de datos, según el tipo de consulta que se va a realizar. Ejemplos.
 
-    .cuadro-pasos__data-table
-      .cuadro-pasos__data-table__header
-        .cuadro-pasos__data-table__columna
-          span.h2.mb-0 TIPOLOGÍA
-        .cuadro-pasos__data-table__columna
-          span.h2.mb-0 COSTE
-        .cuadro-pasos__data-table__columna
-          span.h2.mb-0 EJEMPLOS
+      .cuadro-pasos__data-table
+        .cuadro-pasos__data-table__header
+          .cuadro-pasos__data-table__columna
+            span.h2.mb-0 TIPOLOGÍA
+          .cuadro-pasos__data-table__columna
+            span.h2.mb-0 COSTE
+          .cuadro-pasos__data-table__columna
+            span.h2.mb-0 EJEMPLOS
 
-      .cuadro-pasos__data-table__row
-        .cuadro-pasos__data-table__columna
-          span Bases de datos bibliográficas
-        .cuadro-pasos__data-table__columna
-          span Comerciales y gratuitos.
-        .cuadro-pasos__data-table__columna
-          span SCOPUS, WOS, Chemical Abstracts, ERIC, ABI/Inform, CAB, MILA. etc.
+        .cuadro-pasos__data-table__row
+          .cuadro-pasos__data-table__columna
+            span Bases de datos bibliográficas
+          .cuadro-pasos__data-table__columna
+            span Comerciales y gratuitos.
+          .cuadro-pasos__data-table__columna
+            span SCOPUS, WOS, Chemical Abstracts, ERIC, ABI/Inform, CAB, MILA. etc.
 
-      .cuadro-pasos__data-table__row
-        .cuadro-pasos__data-table__columna
-          span Portadas de revistas y libros electrónicos
-        .cuadro-pasos__data-table__columna
-          span Parte comerciales y parte gratuitos.
-        .cuadro-pasos__data-table__columna
-          span Emerald, ScienceDirect (Elsevier), Springer, Willey, Taylor and Francis, Ingenta.
+        .cuadro-pasos__data-table__row
+          .cuadro-pasos__data-table__columna
+            span Portadas de revistas y libros electrónicos
+          .cuadro-pasos__data-table__columna
+            span Parte comerciales y parte gratuitos.
+          .cuadro-pasos__data-table__columna
+            span Emerald, ScienceDirect (Elsevier), Springer, Willey, Taylor and Francis, Ingenta.
 
-      .cuadro-pasos__data-table__row
-        .cuadro-pasos__data-table__columna
-          span Repositorios y Recolectores (Open Access)
-        .cuadro-pasos__data-table__columna
-          span Gratuitos
-        .cuadro-pasos__data-table__columna
-          span E-LIS, REPEC, ARxiv, OAlster, Recolecta
+        .cuadro-pasos__data-table__row
+          .cuadro-pasos__data-table__columna
+            span Repositorios y Recolectores (Open Access)
+          .cuadro-pasos__data-table__columna
+            span Gratuitos
+          .cuadro-pasos__data-table__columna
+            span E-LIS, REPEC, ARxiv, OAlster, Recolecta
 
-      .cuadro-pasos__data-table__row
-        .cuadro-pasos__data-table__columna
-          span Motores de búsqueda académicos
-        .cuadro-pasos__data-table__columna
-          span Gratuitos
-        .cuadro-pasos__data-table__columna
-          span Google Académico, Sci-Lit, One Finder, Dimensions.
+        .cuadro-pasos__data-table__row
+          .cuadro-pasos__data-table__columna
+            span Motores de búsqueda académicos
+          .cuadro-pasos__data-table__columna
+            span Gratuitos
+          .cuadro-pasos__data-table__columna
+            span Google Académico, Sci-Lit, One Finder, Dimensions.
 
-      .cuadro-pasos__data-table__row
-        .cuadro-pasos__data-table__columna
-          span Metabuscadores de bibliotecas
-        .cuadro-pasos__data-table__columna
-          span Comerciales
-        .cuadro-pasos__data-table__columna
-          span Explora (Catálogo de la UEX), Rebiun, etc.
+        .cuadro-pasos__data-table__row
+          .cuadro-pasos__data-table__columna
+            span Metabuscadores de bibliotecas
+          .cuadro-pasos__data-table__columna
+            span Comerciales
+          .cuadro-pasos__data-table__columna
+            span Explora (Catálogo de la UEX), Rebiun, etc.
 
 
 </template>
@@ -120,6 +121,16 @@ export default {
     indicador: true,
     showModal: false,
   }),
+  watch: {
+    showModal(val) {
+      const el = document.body
+      if (val) {
+        el.classList.add('body--modal-open')
+      } else {
+        el.classList.remove('body--modal-open')
+      }
+    },
+  },
 }
 </script>
 
@@ -174,18 +185,33 @@ export default {
       background-color: #fff
 
   &__modal
-    position: fixed
+    position: relative
     max-width: 1140px
-    top: 50%
-    left: 50%
     width: 95%
     padding: 50px
     max-height: 95vh
     overflow: auto
     background-color: #fff
     box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.2)
-    transform: translate(-50%,-50%)
-    z-index: 1000000
+
+    &__container
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      z-index: 100000000
+      display: flex
+      align-items: center
+      justify-content: center
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(0, 0, 0, 0.9)
 
     &__cerrar
       cursor: pointer

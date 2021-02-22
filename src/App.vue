@@ -52,4 +52,8 @@ a
   transition: margin-left 0.5s ease-in-out
   &--menu-abierto
     margin-left: 320px
+
+
+.body--modal-open
+  overflow: hidden
 </style>
