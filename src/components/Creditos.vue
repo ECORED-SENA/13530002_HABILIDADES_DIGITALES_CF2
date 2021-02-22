@@ -92,7 +92,7 @@ footer
           p.footer-texto
             strong Francisco José Lizcano Reyes 
             br   
-            span.text-small Responsable del equipo
+            span.text-small Asesor metodologógico y pedagógico
             br
             span.text-small.text-uppercase Centro Industrial Del Diseño Y La Manufactura
             br
