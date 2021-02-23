@@ -9,9 +9,9 @@
 
       .card.resultado-item
         .card-body
-          ul.bg-color-dark
-            li 
-              span Seleccionar información y recursos digitales teniendo en cuenta herramientas y protocolos de búsqueda.
+          ul.bg-color-dark.mb-0
+            li.mb-0
+              span Gestionar información y recursos digitales teniendo en cuenta herramientas de búsqueda y protocolos.
 
   section#IndiceTematico.curso-indice-tematico.section
     .container

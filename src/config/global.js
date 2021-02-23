@@ -1,5 +1,5 @@
 export const global = {
-  tituloPrincipal: 'Empezando el aprendizaje, dispositivos y TIC.',
+  tituloPrincipal: 'Módulo 2. Navegadores y buscadores.',
   subtituloPrincipal:
     'Desarrollo de habilidades digitales para la gestión de la información ',
   descripcionCurso:
@@ -14,8 +14,8 @@ export const desarrolloDeContenidos = [
   //   route: 'introduccion',
   // },
   {
-    type: '1',
-    title: 'Componentes',
+    type: '2',
+    title: 'Empezando el aprendizaje, dispositivos y TIC',
     route: 'curso',
   },
   {
@@ -42,8 +42,8 @@ export const menuPrincipal = {
       icon: 'fa fa-play-circle',
       title: '2. Empezando el aprendizaje, dispositivos y TIC',
       tags: [
-        'TIC',
-        'Internet',
+        'Navegadores',
+        'Buscadores',
         'Truncamiento',
         'OperadoresBooleanos',
         'Digital',
