@@ -326,7 +326,7 @@
             .boton-spbresale__icono
               img(src="@/assets/images/pages/tema2/img_24.svg")
 
-            a.h1(href="") Sistema de 
+            a.h1(href="http://biblioteca.sena.edu.co/paginas/bases.html" target="_blank") Sistema de 
               strong Bibliotecas SENA
 
         #t_2_3_4.header-ecored--b.mb-5
