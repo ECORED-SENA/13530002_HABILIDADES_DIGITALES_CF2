@@ -62,16 +62,6 @@
                 br
                 | Es una interfaz gráfica que permite a los internautas visualizar cualquier tipo de archivo multimedia, sin importar su localización o formato. Se encuentra un navegador en todo tipo de sistemas operativos, lo que permite que, sin ser expertos, podamos navegar por el interesante mundo de la red (computadores conectados entre sí) de Internet.
 
-
-        iframe.mb-6(
-          width='100%', 
-          height='600', 
-          src='https://www.youtube.com/embed/eml0Tx', 
-          frameborder='0', 
-          allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
-          allowfullscreen=''
-        )
-        
         #t_2_2.header-ecored.title-full-width
           h1 2.2 Navegadores
 
@@ -107,7 +97,7 @@
         iframe.mb-6(
           width='100%', 
           height='600', 
-          src='https://www.youtube.com/embed/2L91WMqw96A', 
+          src='https://www.youtube.com/embed/eml0TxkJFIM', 
           frameborder='0', 
           allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
           allowfullscreen=''
@@ -122,28 +112,30 @@
             p Otro aspecto importante que debe conocer es que, para poder utilizar motores de búsqueda y tener acceso a las direcciones URL, los navegadores se comunican con servidores web a través de un 
               strong protocolo de transferencia de hipertextos.
 
-        p.mb-5 Por su parte, el 
+        p.mb-5 El 
           strong https:// 
-          | es un protocolo seguro para transferir hipertexto y viene de las siglas Hypertext Transfer Protocol Secure (en español, Protocolo Seguro de Transferencia de Hipertexto); es un sistema de organización de datos basado en la vinculación de fragmentos textuales o gráficos de estos fragmentos, y todos ellos incluyen la mayor parte de las siguientes características:
-
+          | https:// es un protocolo seguro para transferir hipertexto y viene de las siglas Hypertext Transfer Protocol Secure (en español, Protocolo Seguro de Transferencia de Hipertexto); es un sistema de organización de datos basado en la vinculación de fragmentos textuales o gráficos de estos fragmentos, y todos ellos incluyen la mayor parte de las siguientes características:
+          
         PartesNavegador.mb-5
 
         
-        p.mb-6 Un factor importante para conocer es que, para mantener la privacidad, por lo general los navegadores tienen formas precisas de almacenar: cookies, enlaces web y el historial, que son los datos que, para optimizar el funcionamiento de los equipos, se pueden eliminar. También se cuenta con un tipo de navegación privada, conocida como 
+        p.mb-5 Un factor importante para conocer es que, para mantener la privacidad, por lo general los navegadores tienen formas precisas de almacenar: cookies, enlaces web y el historial, que son los datos que, para optimizar el funcionamiento de los equipos, se pueden eliminar. También se cuenta con un tipo de navegación privada, conocida como 
           strong modo incognito
-          |, que es una función de privacidad que se encuentra en algunos navegadores. Cuando se navega en este 
+          | , que es una función de privacidad que se encuentra en algunos navegadores. Cuando se navega en este 
           strong modo
-          |, se crea una sesión provisional que no se vincula a la sesión principal del navegador, ni a los datos del usuario.
+          | , se crea una sesión provisional que no se vincula a la sesión principal del navegador, ni a los datos del usuario.
           br
           br
-          | Cuando se tengan claros los aspectos anteriores, usted 
-          strong cuenta, entonces, con la capacidad para seleccionar qué navegador es el que va a utilizar para que le cumpla con sus necesidades. 
+          | Cuando se tengan claros los aspectos anteriores, 
+          strong usted cuenta, entonces, con la capacidad para seleccionar qué navegador es el que va a utilizar para que le cumpla con sus necesidades. 
+          br
           | Para aprender a configurar su navegador, lo invitamos a ver el video a continuación.
+
 
         iframe.mb-6(
           width='100%', 
           height='600', 
-          src='https://www.youtube.com/embed/2L91WMqw96A', 
+          src='https://www.youtube.com/embed/24xhDJpGa6k', 
           frameborder='0', 
           allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
           allowfullscreen=''
@@ -293,7 +285,7 @@
         iframe.mb-6(
           width='100%', 
           height='600', 
-          src='https://www.youtube.com/embed/2L91WMqw96A', 
+          src='https://www.youtube.com/embed/99G6_y2TZPo', 
           frameborder='0', 
           allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
           allowfullscreen=''
@@ -369,7 +361,7 @@
 
         CuadroPasosB
 
-        .tarjeta-borde-amarillo.pb-5.mb-7
+        .tarjeta-borde-amarillo.pb-5
           p.mb-0 Es importante hacer el reconocimiento de la autoría del video y de cualquier contenido que se encuentre ligado a la licencia CC; si es posible, se puede hacer una donación a los creadores del contenido y agradecer por los recursos digitales que aportan.
 
 
