@@ -38,7 +38,7 @@ export default {
       {
         ano: '1994',
         texto:
-          'Primera web de comercio electrónico: El Retailer Online Netmarket. ',
+          'Primera web de comercio electrónico: el Retailer Online Netmarket. ',
         img: require('@/assets/images/pages/tema2/img_13.svg'),
       },
       {

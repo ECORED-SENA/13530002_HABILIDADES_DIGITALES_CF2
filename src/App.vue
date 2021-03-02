@@ -53,6 +53,9 @@ a
   &--menu-abierto
     margin-left: 320px
 
+    .cuadro-pasos__modal__container
+      margin-left: 320px
+
 
 .body--modal-open
   overflow: hidden

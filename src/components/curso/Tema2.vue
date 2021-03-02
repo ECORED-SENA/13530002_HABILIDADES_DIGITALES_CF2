@@ -297,8 +297,7 @@
         BarraBusqueda(texto="¿Alguna vez le ha sucedido que ha intentado buscar una información muy específica,")
         .mb-5
           .cuadro-dialogo--azul
-            p.mb-0 pero los resultados obtenidos son muy diferentes a lo que realmente esperaba encontrar? 
-              strong realmente esperaba encontrar?
+            p.mb-0 pero los resultados obtenidos son muy diferentes a lo que realmente esperaba encontrar?
 
         p.mb-5 Cuando se realizan búsquedas por Internet, es importante tomar en cuenta algunas recomendaciones que permitan obtener el resultado esperado y que sean realmente exitosas. 
           br

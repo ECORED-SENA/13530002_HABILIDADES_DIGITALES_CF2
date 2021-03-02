@@ -1,7 +1,7 @@
 export const global = {
-  tituloPrincipal: 'Módulo 2. Navegadores y buscadores.',
+  tituloPrincipal: 'Módulo 2. Navegadores y buscadores',
   subtituloPrincipal:
-    'Desarrollo de habilidades digitales para la gestión de la información ',
+    'Desarrollo de habilidades digitales para la gestión de la información',
   descripcionCurso:
     'Este módulo aborda conceptos básicos relacionados con los dispositivos usados para navegar en internet, así como la influencia que tiene el uso de las tecnologías de información y comunicación - TIC en diferentes contextos',
   imagen: require('@/assets/images/pages/tema2/img_21.svg'),
@@ -151,7 +151,8 @@ export const referencias = [
   {
     referencia:
       'Moreira, Gislene (2011). Democracia WiFi: Dinámicas de la política y la comunicación en la era digital. Quórum Académico, 8(2),183-208. [fecha de Consulta 18 de diciembre de 2020]. ISSN: 1690-7582. Disponible en:',
-    enlace: 'https://www.redalyc.org/articulo.oa?id=1990/199020215002',
+    enlace:
+      'https://biblat.unam.mx/es/revista/quorum-academico/articulo/democracia-wifi-dinamicas-de-la-politica-y-la-comunicacion-en-la-era-digital',
     tituloenlace: '',
   },
 ]
@@ -160,20 +161,20 @@ export const glosario = [
   {
     termino: 'Android',
     significado:
-      'Sistema operativo que usan teléfonos móviles usa como base Linux.',
+      'sistema operativo que usan teléfonos móviles usa como base Linux.',
   },
   {
     termino: 'Raspberry',
     significado:
-      'Dispositivo embebido con una placa base emulando un computador de bajo costo para aplicaciones específicas.',
+      'dispositivo embebido con una placa base emulando un computador de bajo costo para aplicaciones específicas.',
   },
   {
     termino: 'TIC',
-    significado: 'Acrónimo de tecnologías de la información y comunicación.',
+    significado: 'acrónimo de tecnologías de la información y comunicación.',
   },
   {
     termino: 'Wifi',
     significado:
-      'Es una marca comercial que también es usada para designar a las tecnologías de red sin cable (Moreira, 2011).',
+      'es una marca comercial que también es usada para designar a las tecnologías de red sin cable (Moreira, 2011).',
   },
 ]
