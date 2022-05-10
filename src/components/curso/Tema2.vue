@@ -37,7 +37,7 @@
         )
         .mb-5
           i Castellanos, U. (julio 16 de 2017). Historia de Internet Ilustrado (Video). Disponible en:
-            a(href="https://www.youtube.com/watch?v=HsoGxPvsm1Y&ab_channel=UrielCastellanos", target="_blank") https://www.youtube.com/watch?v=HsoGxPvsm1Y&ab_channel=UrielCastellanos
+            a(href="https://www.youtube.com/watch?v=BWb6ri3ePew", target="_blank") https://www.youtube.com/watch?v=BWb6ri3ePew
         
         p.mb-5 Ahora, vamos a llevar a cabo un breve recorrido, para conocer algunos datos importantes sobre la historia de la Internet, a través de la siguiente línea de tiempo.
 
